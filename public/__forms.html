@@ -1,0 +1,21 @@
+<!-- Static form skeletons for Netlify build-time detection. Not rendered to users. -->
+<html>
+  <body>
+    <form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="name" />
+      <input name="email" type="email" />
+      <input name="subject" />
+      <textarea name="message"></textarea>
+      <input name="bot-field" />
+    </form>
+    <form name="testimonial" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="testimonial" />
+      <input name="name" />
+      <input name="role" />
+      <textarea name="message"></textarea>
+      <input name="stars" />
+      <input name="bot-field" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+@import "tailwindcss" source("../");
+
+:root {
+  --teal: #2C6E6A;
+  --teal-mid: #3D8B82;
+  --teal-light: #5AADA3;
+  --teal-pale: #EAF4F3;
+  --teal-bg: #F0F7F6;
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-pale: #FDF5E0;
+  --white: #ffffff;
+  --off-white: #F8FAFA;
+  --gray-mid: #7A9490;
+  --text-dark: #1A2E2C;
+  --text-body: #3D5854;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: var(--white);
+  color: var(--text-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.4s ease;
+}
